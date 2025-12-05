@@ -1,0 +1,18 @@
+source "https://rubygems.org"
+
+# Use most recent irb
+gem "irb"
+
+# Code loading
+gem "zeitwerk"
+
+# Run the target application in a separate session
+gem "session"
+
+# Call LLM's
+gem "ruby-openai"
+
+group :development do
+  gem "reek"
+  gem "rubocop"
+end

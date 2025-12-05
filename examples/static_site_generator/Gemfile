@@ -1,0 +1,8 @@
+source "https://rubygems.org"
+
+# Code loading
+gem "zeitwerk"
+
+gem "front_matter_parser"
+
+gem "kramdown"

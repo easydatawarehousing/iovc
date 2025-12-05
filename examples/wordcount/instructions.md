@@ -1,0 +1,3 @@
+Build a command line application in Ruby that takes a file path as an argument, counts the number of lines and words in the file and prints the results. Include error handling for a non-existent file. Use 'instructions.md' when no arguments are given. Make sure that the file is opened in read-only mode.
+
+This application is simple enough that reading the file and counting its content fits in a single class.

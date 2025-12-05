@@ -1,0 +1,6 @@
+class App
+
+  def initialize
+    run_app
+  end
+end
