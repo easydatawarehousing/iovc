@@ -10,10 +10,10 @@ To be succesful with small models (~8..30 billion parameters) I figure you will 
 into the smallest possible unit of work, i.e. a single method at the time. Similar to how humans code.
 To make this work, making clever use of Ruby's strengths is essential.
 
-> The idea is simple, start from an application template: one line of code that calls a method that does not yet exist.
-> Execute the code. Ruby's `method_missing` will intercept the call to the missing method.
-> Ask an LLM to write code for this method given a description of the app.
-> Then repeat: run app again, fill in more missing code and fix errors.
+> The idea is simple, start from an application template: one line of code that calls a method that does not yet exist.  
+> Execute the code. Ruby's `method_missing` will intercept the call to the missing method.  
+> Ask an LLM to write code for this method given a description of the app.  
+> Then repeat: run app again, fill in more missing code and fix errors.  
 > Stop when the app returns normal (hopefully the desired) output.
 
 In practice, making this work is a bit more involved than it sounds. LLM's need enough context to produce a useful response.
@@ -62,7 +62,7 @@ The interesting bit of code that loads code, catches errors and missing methods 
 
 - A recent Ruby (3.3+)
 - A running [Ollama](https://ollama.com/) instance.
-  Any OpenAI compatible API is possible with some tweaking of parameters in [llm.rb](ruby/lib/llm.rb)).  
+  Any OpenAI compatible API is possible with some tweaking of parameters in [llm.rb](ruby/lib/llm.rb)).
   Even without a GPU you can run Ollama: accept longer response times or use one of the 'cloud' models
 
 ## How to run?
